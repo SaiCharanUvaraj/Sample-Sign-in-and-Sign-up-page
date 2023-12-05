@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <style>
+        body
+        {
+            background-color:#548CA8;
+            height: 100vh;
+        }
+        .picture
+        {
+            margin-top: 10vh;
+        }
+        .navbar
+        {
+            background-color:#476072;
+        }
+        .navbar-brand
+        {
+            font-size: xx-large;
+        }
+        .active-link
+        {
+            background-color:#476072;
+            color: white;
+            font-size:large;
+            border:0vw;
+        }
+        .nav-link
+        {
+            font-size: large;
+            background-color:#476072;
+            color: white;
+            border-radius:1vw;
+            transition:0.5s;
+        }
+        .nav-link:hover
+        {
+            color:black;
+            text-decoration: underline;
+            border-radius:1vw;
+            transition:0.5s;
+        }
+        .dropdown-menu
+        {
+            background-color:#334257;
+            border: 0.1vw black solid;
+        }
+        .dropdown-item
+        {
+            font-size: small;
+            color: #EEEEEE;
+            transition:0.5s;
+        }
+        .dropdown-item:hover
+        {
+            background-color:#476072;
+            color: #EEEEEE;
+            transition:0.5s;
+        }
+        .footer,.footer-item
+        {
+            background-color: #476072;
+            color:#EEEEEE;
+            font-size: small;
+        }
+        .card
+        {
+            background-color: #334257;
+            border-radius: 2vw;
+            color: #EEEEEE;
+            border: 0.1vw black solid;
+            margin-top: 20vh;
+        }
+        .form-control:focus 
+        {
+            border-color: #476072; 
+            box-shadow: 0 0 0 0.2rem #476072; 
+        }
+        .btn
+        {
+            background-color:#EEEEEE;
+            border: 0.1vw black solid;
+            color: black;
+            transition: 0.5s;
+        }
+        .btn:hover
+        {
+            background-color:#476072;
+            border: 0.1vw black solid;
+            color:white;
+            transition:0.5s;
+        }
+        .btn:active
+        {
+            background-color:#476072;
+            border: 0.1vw white solid;
+            color:white;
+            transition:0.5s;
+        }
+        @media screen and (max-width:1000px) 
+        {
+            .card
+            {
+                margin-top: 20vh;
+            }
+            .footer
+            {
+                margin-top: 2vh;
+            }
+            
+        }
+        @media screen and (max-width:576px) 
+        {
+            .card
+            {
+                margin-top: 5vh;
+            }
+            .footer
+            {
+                margin-top: 2vh;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top">
+        <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" 
+                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="me-3">
+                <center>
+                    <p class=" m-0 p-2 navbar-brand"> Bank Logo </p>
+                </center>
+            </div>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                    <li class="m-1"><button class="nav-link p-2" aria-current="page" href="">Home</button></li>
+                    <li class="nav-item dropdown m-1">
+                        <button class="nav-link dropdown-toggle p-2" href="" id="navbarDropdownMenuLink" role="button" 
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Accounts
+                        </button>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <li><a class="dropdown-item" href="">Savings Account</a></li>
+                            <li><a class="dropdown-item" href="">Business Account</a></li>
+                            <li><a class="dropdown-item" href="">Salary Account</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown m-1">
+                        <button class="nav-link dropdown-toggle p-2" href="" id="navbarDropdownMenuLink" role="button" 
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Payments
+                        </button>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <li><a class="dropdown-item" href="">Bill Payments</a></li>
+                            <li><a class="dropdown-item" href="">UPI payments</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown m-1">
+                        <button class="nav-link dropdown-toggle p-2" href="" id="navbarDropdownMenuLink" role="button" 
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Loans
+                        </button>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <li><a class="dropdown-item" href="">Personal loans</a></li>
+                            <li><a class="dropdown-item" href=""> Home loans</a></li>
+                            <li><a class="dropdown-item" href="">See our loans</a></li>
+                            <li><a class="dropdown-item" href="">Loan calculator</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown m-1">
+                        <button class="nav-link dropdown-toggle p-2" href="" id="navbarDropdownMenuLink" role="button" 
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Cards
+                        </button>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <li><a class="dropdown-item" href="">Debit card</a></li>
+                            <li><a class="dropdown-item" href="">Credit Card</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item m-1"><a class="nav-link p-2" aria-current="page" href="/SignIn.html">Sign In</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container-fluid">
+        <div class="row justify-content-center">
+            <div class=" col-sm-0 col-md-6 col-lg-8 right">
+                <img class="img-fluid picture" src="/images/Login page image.jpg">
+            </div>
+            <div class="col-sm-8  col-md-6 col-lg-4">
+                <div class="card">
+                    <div class="card-header">
+                        <center class="h3">Sign Up</center>
+                    </div>
+                    <div class="card-body">
+                        <form>
+                            <div class="mb-3">
+                                <label for="username" class="form-label">Username</label>
+                                <input type="text" class="form-control" id="username" name="username" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="email" class="form-label">Email</label>
+                                <input type="email" class="form-control" id="email" name="email" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="password" class="form-label">Password</label>
+                                <input type="password" class="form-control" id="password" name="password" required>
+                            </div>
+                            <center>
+                                <button type="submit" class="btn mb-5">Sign Up</button>
+                                <hr>
+                                <p> <i>Already have an account? Then <a class="nav-link" style="background-color: #334257;" 
+                                    href="/SignIn.html">Sign in</a></i></p>
+                            </center>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid footer p-3">
+        <div class="container">
+            <hr>
+            <footer class="row">
+                <div class="col-4">
+                    <p class="h5">Bank</p>
+                    <ul class="nav flex-column">
+                        <li class="nav-item mb-1"><a href="" class="nav-link p-0 footer-item">Home</a></li>
+                        <li class="nav-item mb-1"><a href="" class="nav-link p-0 footer-item">Accounts</a></li>
+                        <li class="nav-item mb-1"><a href="" class="nav-link p-0 footer-item">Payments</a></li>
+                        <li class="nav-item mb-1"><a href="" class="nav-link p-0 footer-item">Loans</a></li>
+                        <li class="nav-item mb-1"><a href="" class="nav-link p-0 footer-item">About us</a></li>
+                    </ul>
+                </div>
+                <div class="col-4">
+                    <p class="h5">Popular Services</p>
+                    <ul class="nav flex-column">
+                        <li class="nav-item mb-1"><a href="" class="nav-link p-0 footer-item">Savings Account</a></li>
+                        <li class="nav-item mb-1"><a href="" class="nav-link p-0 footer-item">Money Transfer</a></li>
+                        <li class="nav-item mb-1"><a href="" class="nav-link p-0 footer-item">Fixed Deposit</a></li>
+                        <li class="nav-item mb-1"><a href="" class="nav-link p-0 footer-item">Credit Card</a></li>
+                    </ul>
+                </div>
+                <div class="col-4">
+                    <p class="h5">Popular Loans</p>
+                    <ul class="nav flex-column">
+                        <li class="nav-item mb-1"><a href="" class="nav-link p-0 footer-item">Personal Loan</a></li>
+                        <li class="nav-item mb-1"><a href="" class="nav-link p-0 footer-item">Home Loan</a></li>
+                        <li class="nav-item mb-1"><a href="" class="nav-link p-0 footer-item">Education Loan</a></li>
+                        <li class="nav-item mb-1"><a href="" class="nav-link p-0 footer-item">Vehicle Loan</a></li>
+                    </ul>
+                </div>
+            </footer>
+            <hr>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
